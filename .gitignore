@@ -1,0 +1,46 @@
+.venv/
+__pycache__/
+**/__pycache__/
+.pytest_cache/
+*.pyc
+*.pyo
+*.pyd
+.coverage
+.hypothesis/
+
+# Generated experiment outputs and local evidence bundles
+output/
+results/
+tmp/
+qa/
+*.zip
+*.tar
+*.tar.gz
+
+# Downloaded source pages and raw archives; use the manifest and downloader
+# to retrieve public datasets when needed.
+data/sources/
+data/raw/
+
+# LaTeX build products and rendered documents
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.synctex.gz
+*.pdf
+
+# Local editor and operating-system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+paper/*.aux
+paper/*.log
+paper/*.out
+paper/*.bbl
+paper/*.blg

@@ -1,0 +1,49 @@
+"""Complete audited cohort, including exact controls and recent DSN."""
+import json
+from pathlib import Path
+import numpy as np
+from run_postmetric_pruning_classifier import ROOT,FOLDER,SOURCE,METHODS,digest
+from continue_soft_topk_knn_pilot import verify
+from review_box_iterations import paired
+
+
+def main():
+    audit=verify(FOLDER); original_audit=verify(SOURCE)
+    summary=json.loads((FOLDER/'complete.json').read_text()); original=json.loads((SOURCE/'complete.json').read_text())
+    assert len(summary['rows'])==15
+    old={r['dataset']:r for r in original['rows']}; details=[]
+    for row in summary['rows']:
+        saved=json.loads((FOLDER/(row['dataset']+'.json')).read_text()); count=row['actual_counts']['proposed']
+        assert all(row['actual_counts'][m]==count for m in ('fgs_exact','sfrip_exact','fgs_uniform_exact','sfrip_uniform_exact'))
+        assert row['actual_counts']['full_source']==row['d']
+        metric=saved['outer']['results']['proposed']['metric']
+        details.append({'dataset':row['dataset'],'d':row['d'],'new_count':count,
+            'original_count':old[row['dataset']]['actual_counts']['proposed'],
+            'selected_variant':metric['variant'],'new_BA':row['metrics']['proposed']['clean_BA'],
+            'original_BA':old[row['dataset']]['metrics']['proposed']['clean_BA'],
+            'new_minus_original_pp':100*(row['metrics']['proposed']['clean_BA']-old[row['dataset']]['metrics']['proposed']['clean_BA']),
+            'all_counts':row['actual_counts']})
+    dsfolder=ROOT/'results/dsnfrs-formula-expanded-pilot'; ds_audit=verify(dsfolder)
+    ds={r['dataset']:r for r in json.loads((dsfolder/'complete.json').read_text())['rows']}
+    assert set(ds)==set(old)
+    for name in ds:
+        ours=json.loads((FOLDER/(name+'.json')).read_text()); theirs=json.loads((dsfolder/(name+'.json')).read_text())
+        assert ours['reference_indices']==theirs['reference_indices'] and ours['validation_indices']==theirs['validation_indices']
+    ds_contrasts={m:paired([r['metrics'][m]['clean_BA']-ds[r['dataset']]['metrics']['clean_BA'] for r in summary['rows']]) for m in METHODS}
+    output={'rows':details,'new_minus_original':paired([r['new_minus_original_pp']/100 for r in details]),
+        'all_classifier_contrasts':summary['contrasts_clean_BA'],'primary_descriptive_holm':summary['primary_descriptive_holm'],
+        'DSN_expanded_formula_contrasts':ds_contrasts,'mean_removed':summary['mean_removed'],
+        'counts':summary['counts'],'pilot_gate_passed':summary['pilot_gate_passed'],'goal_achieved':False,
+        'audit_sha256':digest(FOLDER/'complete-audit.json'),'source_audit_sha256':digest(SOURCE/'complete-audit.json'),
+        'DSN_audit_sha256':digest(dsfolder/'complete-audit.json'),'review_script_sha256':digest(Path(__file__)),
+        'limitations':['ALL15 and reused folds exposed development, p-values descriptive not confirmatory.',
+            'Refined FGS/SFRIP counts can differ; exact-count controls are separate adaptations with extra tuning.',
+            'Inherited seven source failures remain failures; new exact-control failures separately retained.',
+            'Recent DSN is formula-controlled, original example and author classifier conventions unresolved.',
+            'No original-full guarantee for own-anchor controls, and no population risk theorem.',
+            'Additional author-faithful recent baselines and fresh confirmation remain required.']}
+    (ROOT/'research/postmetric-pruning-classifier-review.json').write_text(json.dumps(output,indent=2),encoding='utf-8')
+    print(json.dumps({k:v for k,v in output.items() if k not in ('rows','all_classifier_contrasts','DSN_expanded_formula_contrasts')},indent=2),flush=True)
+
+
+if __name__=='__main__': main()

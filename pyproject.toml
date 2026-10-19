@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "certified-frfs-research"
+version = "0.1.0"
+description = "Shared-perturbation certificates for fuzzy-rough attribute reduction"
+requires-python = ">=3.11"
+dependencies = ["numpy", "scipy", "scikit-learn", "pandas", "matplotlib", "requests"]
+
+[project.optional-dependencies]
+constrained-logistic = ["cvxpy==1.9.3", "clarabel==0.11.1"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]

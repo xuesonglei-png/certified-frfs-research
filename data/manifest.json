@@ -1,0 +1,979 @@
+{
+  "banknote": {
+    "name": "banknote",
+    "uci_id": 267,
+    "source_url": "https://archive.ics.uci.edu/dataset/267/banknote+authentication",
+    "archive_url": "https://archive.ics.uci.edu/static/public/267/banknote+authentication.zip",
+    "archive_members": [
+      "data_banknote_authentication.txt"
+    ],
+    "parsed_members": [
+      "data_banknote_authentication.txt"
+    ],
+    "archive_sha256": "1e2acd9a2085fadf3d8145c12d3d22af853320d52294a6590c2eaf75fdc05227",
+    "processed_sha256": "d50d223e80fbc071a896f8c9fac76f990c05ec165cc855835125dd2e78c49988",
+    "array_sha256": "401488cec5507b433343baaaf10122db9d065dbc4aee0d1d5f171c931c195093",
+    "n_samples": 1372,
+    "n_features": 4,
+    "n_classes": 2,
+    "class_labels": [
+      "0",
+      "1"
+    ],
+    "class_counts": [
+      762,
+      610
+    ],
+    "missing_values": 0,
+    "missing_handling": "Missing source values remain NaN. Fit imputation on each training fold only.",
+    "dropped_source_columns_zero_based": [],
+    "target_source_column_zero_based": 4,
+    "feature_source_columns_zero_based": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "notes": "Four continuous wavelet summary measurements.",
+    "categorical_or_indicator_features_zero_based": [],
+    "all_predictors_numerically_encoded": true,
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "license_evidence": "creativecommons.org/licenses/by/4.0",
+    "license_quote": "This dataset is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license.",
+    "doi": "10.24432/C55P57",
+    "source_page_sha256": "dd848f3a121bc9684459ad37b40d52b9b68bb96340b2701b0e90ceff71d617ec",
+    "source_page_error": null,
+    "retrieved_utc": "2026-09-19T13:26:40.620170+00:00"
+  },
+  "ecoli": {
+    "name": "ecoli",
+    "uci_id": 39,
+    "source_url": "https://archive.ics.uci.edu/dataset/39/ecoli",
+    "archive_url": "https://archive.ics.uci.edu/static/public/39/ecoli.zip",
+    "archive_members": [
+      "ecoli.data",
+      "ecoli.names"
+    ],
+    "parsed_members": [
+      "ecoli.data"
+    ],
+    "archive_sha256": "a6580298b76828674a5197152da7a99f4bd09bc589dbf1142900f1698882ec32",
+    "processed_sha256": "b9d7002d4cad62c692c4d81f0dbf9e5ad7d0243682f5b3a7b2753f4922b7fc76",
+    "array_sha256": "e7bada5194b30c9702d100a278c695ce49c7f56e17acc27450b22522918ccbf7",
+    "n_samples": 336,
+    "n_features": 7,
+    "n_classes": 8,
+    "class_labels": [
+      "cp",
+      "im",
+      "imL",
+      "imS",
+      "imU",
+      "om",
+      "omL",
+      "pp"
+    ],
+    "class_counts": [
+      143,
+      77,
+      2,
+      2,
+      35,
+      20,
+      5,
+      52
+    ],
+    "missing_values": 0,
+    "missing_handling": "Missing source values remain NaN. Fit imputation on each training fold only.",
+    "dropped_source_columns_zero_based": [
+      0
+    ],
+    "target_source_column_zero_based": 8,
+    "feature_source_columns_zero_based": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "notes": "Seven numerical predictors include binary protein indicators; sequence identifier removed.",
+    "categorical_or_indicator_features_zero_based": [
+      2,
+      3
+    ],
+    "all_predictors_numerically_encoded": true,
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "license_evidence": "creativecommons.org/licenses/by/4.0",
+    "license_quote": "This dataset is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license.",
+    "doi": "10.24432/C5388M",
+    "source_page_sha256": "fc6b38174e9e9e48ad30c8ec794ba524402f474828547e13f04ed693224ae4dd",
+    "source_page_error": null,
+    "retrieved_utc": "2026-09-19T13:26:40.611139+00:00"
+  },
+  "glass": {
+    "name": "glass",
+    "uci_id": 42,
+    "source_url": "https://archive.ics.uci.edu/dataset/42/glass+identification",
+    "archive_url": "https://archive.ics.uci.edu/static/public/42/glass+identification.zip",
+    "archive_members": [
+      "Index",
+      "glass.data",
+      "glass.names",
+      "glass.tag"
+    ],
+    "parsed_members": [
+      "glass.data"
+    ],
+    "archive_sha256": "499c07a17115bf63100bb19cc1fdefad7f464bf5dc2b168930fa2071fd6b6e65",
+    "processed_sha256": "29190b19051e6bca1cc6cd21eb5a9964a2f0c9d19a24b63887ea72122503c6be",
+    "array_sha256": "66884ffc63a261a9bac5febd13e0ee2bdeade7047343c80e57534bfd764dbb48",
+    "n_samples": 214,
+    "n_features": 9,
+    "n_classes": 6,
+    "class_labels": [
+      "1",
+      "2",
+      "3",
+      "5",
+      "6",
+      "7"
+    ],
+    "class_counts": [
+      70,
+      76,
+      17,
+      13,
+      9,
+      29
+    ],
+    "missing_values": 0,
+    "missing_handling": "Missing source values remain NaN. Fit imputation on each training fold only.",
+    "dropped_source_columns_zero_based": [
+      0
+    ],
+    "target_source_column_zero_based": 10,
+    "feature_source_columns_zero_based": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "notes": "Nine continuous numerical predictors; identifying row number removed.",
+    "categorical_or_indicator_features_zero_based": [],
+    "all_predictors_numerically_encoded": true,
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "license_evidence": "creativecommons.org/licenses/by/4.0",
+    "license_quote": "This dataset is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license.",
+    "doi": "10.24432/C5WW2P",
+    "source_page_sha256": "4cfe4c85789140671761a38536431adb8e2d6f2a33f28c5b87e3655fda660e48",
+    "source_page_error": null,
+    "retrieved_utc": "2026-09-19T13:26:40.578334+00:00"
+  },
+  "haberman": {
+    "name": "haberman",
+    "uci_id": 43,
+    "source_url": "https://archive.ics.uci.edu/dataset/43/haberman+s+survival",
+    "archive_url": "https://archive.ics.uci.edu/static/public/43/haberman+s+survival.zip",
+    "archive_members": [
+      "haberman.data",
+      "haberman.names"
+    ],
+    "parsed_members": [
+      "haberman.data"
+    ],
+    "archive_sha256": "1001bac29022350e279b064003c426c8ed60f4d76ab4916fb05baf886c8e3ac7",
+    "processed_sha256": "a2368d4f516ecc2ddf20f5d97136c9789f74a956bc6a895688b9aeaa7f5883c7",
+    "array_sha256": "1a82da4f3df0e8fff8f9ec0ca1ee9b4b5689a90b0142ccf5a68c6c0fca20782b",
+    "n_samples": 306,
+    "n_features": 3,
+    "n_classes": 2,
+    "class_labels": [
+      "1",
+      "2"
+    ],
+    "class_counts": [
+      225,
+      81
+    ],
+    "missing_values": 0,
+    "missing_handling": "Missing source values remain NaN. Fit imputation on each training fold only.",
+    "dropped_source_columns_zero_based": [],
+    "target_source_column_zero_based": 3,
+    "feature_source_columns_zero_based": [
+      0,
+      1,
+      2
+    ],
+    "notes": "Three numerical age/year/count predictors, recorded as integers.",
+    "categorical_or_indicator_features_zero_based": [],
+    "all_predictors_numerically_encoded": true,
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "license_evidence": "creativecommons.org/licenses/by/4.0",
+    "license_quote": "This dataset is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license.",
+    "doi": "10.24432/C5XK51",
+    "source_page_sha256": "e1722b09e7ce137f1cecdb654e55586a73487b03768802569b5493c2de29eaa8",
+    "source_page_error": null,
+    "retrieved_utc": "2026-09-19T13:26:40.620170+00:00"
+  },
+  "heart_statlog": {
+    "name": "heart_statlog",
+    "uci_id": 145,
+    "source_url": "https://archive.ics.uci.edu/dataset/145/statlog+heart",
+    "archive_url": "https://archive.ics.uci.edu/static/public/145/statlog+heart.zip",
+    "archive_members": [
+      "heart.dat",
+      "heart.doc",
+      "Index"
+    ],
+    "parsed_members": [
+      "heart.dat"
+    ],
+    "archive_sha256": "04e44018af4f4b32008029fbfb1079e112d3b372bb032dd1ae361c74d7528b2c",
+    "processed_sha256": "e4ad95c1a5c03e1468d2484998333e061c2dd4408c5d8c0a1a3fda94040cbcbc",
+    "array_sha256": "8626e6dd477c26062979e2bf83a2a9a82fedd11759b595913dfcd61de2a343d0",
+    "n_samples": 270,
+    "n_features": 13,
+    "n_classes": 2,
+    "class_labels": [
+      "1",
+      "2"
+    ],
+    "class_counts": [
+      150,
+      120
+    ],
+    "missing_values": 0,
+    "missing_handling": "Missing source values remain NaN. Fit imputation on each training fold only.",
+    "dropped_source_columns_zero_based": [],
+    "target_source_column_zero_based": 13,
+    "feature_source_columns_zero_based": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "notes": "Thirteen numerical columns include categorical codes and binary indicators; ordinal-distance treatment is an explicit baseline limitation.",
+    "categorical_or_indicator_features_zero_based": [
+      1,
+      2,
+      5,
+      6,
+      8,
+      10,
+      12
+    ],
+    "all_predictors_numerically_encoded": true,
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "license_evidence": "creativecommons.org/licenses/by/4.0",
+    "license_quote": "This dataset is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license.",
+    "doi": "10.24432/C57303",
+    "source_page_sha256": "9c757441c64d3c3ea981f948546105fa4f50abf071dbc416ef43e19b4c73c911",
+    "source_page_error": null,
+    "retrieved_utc": "2026-09-19T13:26:40.622169+00:00"
+  },
+  "ionosphere": {
+    "name": "ionosphere",
+    "uci_id": 52,
+    "source_url": "https://archive.ics.uci.edu/dataset/52/ionosphere",
+    "archive_url": "https://archive.ics.uci.edu/static/public/52/ionosphere.zip",
+    "archive_members": [
+      "Index",
+      "ionosphere.data",
+      "ionosphere.names"
+    ],
+    "parsed_members": [
+      "ionosphere.data"
+    ],
+    "archive_sha256": "4d218ece62756c99659011a13052d06464f13cb2b3d0410ce2aef16de1403860",
+    "processed_sha256": "f64cf62021487ad49a6b30d7719706b4bdcca63adf07ad7d2ed918a15e5d8f0c",
+    "array_sha256": "125d63088635dcac1f60359346624f85570da4cbebf3ce686d5983efe039b382",
+    "n_samples": 351,
+    "n_features": 34,
+    "n_classes": 2,
+    "class_labels": [
+      "b",
+      "g"
+    ],
+    "class_counts": [
+      126,
+      225
+    ],
+    "missing_values": 0,
+    "missing_handling": "Missing source values remain NaN. Fit imputation on each training fold only.",
+    "dropped_source_columns_zero_based": [],
+    "target_source_column_zero_based": 34,
+    "feature_source_columns_zero_based": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33
+    ],
+    "notes": "Numeric inputs include two binary/constant indicator columns; not exclusively continuous.",
+    "categorical_or_indicator_features_zero_based": [
+      0,
+      1
+    ],
+    "all_predictors_numerically_encoded": true,
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "license_evidence": "creativecommons.org/licenses/by/4.0",
+    "license_quote": "This dataset is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license.",
+    "doi": "10.24432/C5W01B",
+    "source_page_sha256": "acdb63404b3693b8f097be93c636f631eec2e7c84231b8877f2ca4895c6fd656",
+    "source_page_error": null,
+    "retrieved_utc": "2026-09-19T13:26:40.583342+00:00"
+  },
+  "iris": {
+    "name": "iris",
+    "uci_id": 53,
+    "source_url": "https://archive.ics.uci.edu/dataset/53/iris",
+    "archive_url": "https://archive.ics.uci.edu/static/public/53/iris.zip",
+    "archive_members": [
+      "Index",
+      "bezdekIris.data",
+      "iris.data",
+      "iris.names"
+    ],
+    "parsed_members": [
+      "iris.data"
+    ],
+    "archive_sha256": "d11fe30213d36434a0879aab7cb00ce3c812eb7ba2495874438abff7b7b762e9",
+    "processed_sha256": "0074d2287bee60fd80074e29419df73ab436e5c9bff0e7b63a33f5511484444c",
+    "array_sha256": "d2712b028401f0400cb671cb99d85387a1c721d41262f30ecb7b90f029d20a90",
+    "n_samples": 150,
+    "n_features": 4,
+    "n_classes": 3,
+    "class_labels": [
+      "Iris-setosa",
+      "Iris-versicolor",
+      "Iris-virginica"
+    ],
+    "class_counts": [
+      50,
+      50,
+      50
+    ],
+    "missing_values": 0,
+    "missing_handling": "Missing source values remain NaN. Fit imputation on each training fold only.",
+    "dropped_source_columns_zero_based": [],
+    "target_source_column_zero_based": 4,
+    "feature_source_columns_zero_based": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "notes": "All four predictors are continuous measurements.",
+    "categorical_or_indicator_features_zero_based": [],
+    "all_predictors_numerically_encoded": true,
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "license_evidence": "creativecommons.org/licenses/by/4.0",
+    "license_quote": "This dataset is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license.",
+    "doi": "10.24432/C56C76",
+    "source_page_sha256": "44e1497100e4954fb276a08bf505552906725987093dbe6bbb4f4859f69228ed",
+    "source_page_error": null,
+    "retrieved_utc": "2026-09-19T13:26:40.579341+00:00"
+  },
+  "seeds": {
+    "name": "seeds",
+    "uci_id": 236,
+    "source_url": "https://archive.ics.uci.edu/dataset/236/seeds",
+    "archive_url": "https://archive.ics.uci.edu/static/public/236/seeds.zip",
+    "archive_members": [
+      "seeds_dataset.txt"
+    ],
+    "parsed_members": [
+      "seeds_dataset.txt"
+    ],
+    "archive_sha256": "5033bd71b24592fa70d9b3cc5be02332dc6d03d0b27e6655e6d553f39afab323",
+    "processed_sha256": "0958c5c76a132b01e56aee018f534b8e34267210066ec6e45b30b443e0a00e2b",
+    "array_sha256": "ff5860e67ceca83e72e09105ebd364aadee454cac8110909eb82d09b2ab1495d",
+    "n_samples": 210,
+    "n_features": 7,
+    "n_classes": 3,
+    "class_labels": [
+      "1",
+      "2",
+      "3"
+    ],
+    "class_counts": [
+      70,
+      70,
+      70
+    ],
+    "missing_values": 0,
+    "missing_handling": "Missing source values remain NaN. Fit imputation on each training fold only.",
+    "dropped_source_columns_zero_based": [],
+    "target_source_column_zero_based": 7,
+    "feature_source_columns_zero_based": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "notes": "Seven numerical geometric measurements.",
+    "categorical_or_indicator_features_zero_based": [],
+    "all_predictors_numerically_encoded": true,
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "license_evidence": "creativecommons.org/licenses/by/4.0",
+    "license_quote": "This dataset is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license.",
+    "doi": "10.24432/C5H30K",
+    "source_page_sha256": "063c3e3ea11c3872ec9c62f986befbc5e2628babf24f7518fbe45fdba23a4ad9",
+    "source_page_error": null,
+    "retrieved_utc": "2026-09-19T13:26:40.606622+00:00"
+  },
+  "sonar": {
+    "name": "sonar",
+    "uci_id": 151,
+    "source_url": "https://archive.ics.uci.edu/dataset/151/connectionist+bench+sonar+mines+vs+rocks",
+    "archive_url": "https://archive.ics.uci.edu/static/public/151/connectionist+bench+sonar+mines+vs+rocks.zip",
+    "archive_members": [
+      "sonar.all-data",
+      "sonar.mines",
+      "sonar.rocks",
+      "Index",
+      "sonar.names"
+    ],
+    "parsed_members": [
+      "sonar.all-data"
+    ],
+    "archive_sha256": "088b0b6813fb5ab84736bc2a1e3d6bb886e317520d2f2c04152e2ed65af7a18d",
+    "processed_sha256": "77c5861479115d5b45c909f9d969510edeb448b45be5bb75b11fec644e5f0b79",
+    "array_sha256": "3310402b8872a251d976f9c533c4649d680b36fa21aa8cc30f7d7f687662090a",
+    "n_samples": 208,
+    "n_features": 60,
+    "n_classes": 2,
+    "class_labels": [
+      "M",
+      "R"
+    ],
+    "class_counts": [
+      111,
+      97
+    ],
+    "missing_values": 0,
+    "missing_handling": "Missing source values remain NaN. Fit imputation on each training fold only.",
+    "dropped_source_columns_zero_based": [],
+    "target_source_column_zero_based": 60,
+    "feature_source_columns_zero_based": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59
+    ],
+    "notes": "Sixty numerical sonar energy measurements.",
+    "categorical_or_indicator_features_zero_based": [],
+    "all_predictors_numerically_encoded": true,
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "license_evidence": "creativecommons.org/licenses/by/4.0",
+    "license_quote": "This dataset is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license.",
+    "doi": "10.24432/C5T01Q",
+    "source_page_sha256": "7ef2c6cba7bad4ff2018708a3ded2cd2788e31a04c54dbf18c1394dc47c02f01",
+    "source_page_error": null,
+    "retrieved_utc": "2026-09-19T13:26:40.586574+00:00"
+  },
+  "transfusion": {
+    "name": "transfusion",
+    "uci_id": 176,
+    "source_url": "https://archive.ics.uci.edu/dataset/176/blood+transfusion+service+center",
+    "archive_url": "https://archive.ics.uci.edu/static/public/176/blood+transfusion+service+center.zip",
+    "archive_members": [
+      "transfusion.data",
+      "transfusion.names"
+    ],
+    "parsed_members": [
+      "transfusion.data"
+    ],
+    "archive_sha256": "95c39e2e05972bdc8a9c6fe521184cc8284578885d5b3e0c553d3f7dd9543221",
+    "processed_sha256": "363722c4ed6d99704d34045538e23842ac74e8e7a724b8bffb97c7a5db6d35d2",
+    "array_sha256": "d3b1926aaf688d7bf6fc7274e628b29224514e56e9daa39855d2810c544b9160",
+    "n_samples": 748,
+    "n_features": 4,
+    "n_classes": 2,
+    "class_labels": [
+      "0",
+      "1"
+    ],
+    "class_counts": [
+      570,
+      178
+    ],
+    "missing_values": 0,
+    "missing_handling": "Missing source values remain NaN. Fit imputation on each training fold only.",
+    "dropped_source_columns_zero_based": [],
+    "target_source_column_zero_based": 4,
+    "feature_source_columns_zero_based": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "notes": "Four numerical count/time/volume predictors; includes algebraically redundant frequency and volume.",
+    "categorical_or_indicator_features_zero_based": [],
+    "all_predictors_numerically_encoded": true,
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "license_evidence": "creativecommons.org/licenses/by/4.0",
+    "license_quote": "This dataset is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license.",
+    "doi": "10.24432/C5GS39",
+    "source_page_sha256": "71b489ef64ac6ee15baaba5fee99682437c058f71144a7e447e301f833312a2f",
+    "source_page_error": null,
+    "retrieved_utc": "2026-09-19T13:26:40.616656+00:00"
+  },
+  "vehicle": {
+    "name": "vehicle",
+    "uci_id": 149,
+    "source_url": "https://archive.ics.uci.edu/dataset/149/statlog+vehicle+silhouettes",
+    "archive_url": "https://archive.ics.uci.edu/static/public/149/statlog+vehicle+silhouettes.zip",
+    "archive_members": [
+      "xah.dat",
+      "xaf.dat",
+      "xaa.dat",
+      "xag.dat",
+      "xai.dat",
+      "xad.dat",
+      "xac.dat",
+      "vehicle.doc",
+      "Index",
+      "xab.dat",
+      "xae.dat"
+    ],
+    "parsed_members": [
+      "xaa.dat",
+      "xab.dat",
+      "xac.dat",
+      "xad.dat",
+      "xae.dat",
+      "xaf.dat",
+      "xag.dat",
+      "xah.dat",
+      "xai.dat"
+    ],
+    "archive_sha256": "66ca807d5be5e3403cf035a579e85113880c3019d6cde825670deff05a4a71e0",
+    "processed_sha256": "c2ee7e9f493878a926955ebfbcfa37d254cf074dedf67ce03a0527abe6f8fe2c",
+    "array_sha256": "9359fe7b94ad9b1c9c8634c8b461ccfb5d507ed29932ba3ee941cb3795143176",
+    "n_samples": 846,
+    "n_features": 18,
+    "n_classes": 4,
+    "class_labels": [
+      "bus",
+      "opel",
+      "saab",
+      "van"
+    ],
+    "class_counts": [
+      218,
+      212,
+      217,
+      199
+    ],
+    "missing_values": 0,
+    "missing_handling": "Missing source values remain NaN. Fit imputation on each training fold only.",
+    "dropped_source_columns_zero_based": [],
+    "target_source_column_zero_based": 18,
+    "feature_source_columns_zero_based": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17
+    ],
+    "notes": "Eighteen numerical silhouette descriptors, recorded as integer values.",
+    "categorical_or_indicator_features_zero_based": [],
+    "all_predictors_numerically_encoded": true,
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "license_evidence": "creativecommons.org/licenses/by/4.0",
+    "license_quote": "This dataset is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license.",
+    "doi": "10.24432/C5HG6N",
+    "source_page_sha256": "6ddf9b40ff7d8f4d71bb04be631c16fde740835f6ac0a3c1510b15208e34cfa6",
+    "source_page_error": null,
+    "retrieved_utc": "2026-09-19T13:26:40.622169+00:00"
+  },
+  "vertebral": {
+    "name": "vertebral",
+    "uci_id": 212,
+    "source_url": "https://archive.ics.uci.edu/dataset/212/vertebral+column",
+    "archive_url": "https://archive.ics.uci.edu/static/public/212/vertebral+column.zip",
+    "archive_members": [
+      "column_2C.dat",
+      "column_2C_weka.arff",
+      "column_3C.dat",
+      "column_3C_weka.arff"
+    ],
+    "parsed_members": [
+      "column_3C.dat"
+    ],
+    "archive_sha256": "899ed1d137ceb4c36d59fa35f3cbab39ec3b78fd3ca1fdaf2fae155459c1372f",
+    "processed_sha256": "524bf18c4e91e9d97c6a46c6cce7c5b638bf9115834922dac23959c869f75736",
+    "array_sha256": "d5d987d83a11a60693e0adf13720858dbe939767145dab27c5084da73c80816d",
+    "n_samples": 310,
+    "n_features": 6,
+    "n_classes": 3,
+    "class_labels": [
+      "DH",
+      "NO",
+      "SL"
+    ],
+    "class_counts": [
+      60,
+      100,
+      150
+    ],
+    "missing_values": 0,
+    "missing_handling": "Missing source values remain NaN. Fit imputation on each training fold only.",
+    "dropped_source_columns_zero_based": [],
+    "target_source_column_zero_based": 6,
+    "feature_source_columns_zero_based": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "notes": "Six continuous biomechanical measurements; original three-class task.",
+    "categorical_or_indicator_features_zero_based": [],
+    "all_predictors_numerically_encoded": true,
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "license_evidence": "creativecommons.org/licenses/by/4.0",
+    "license_quote": "This dataset is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license.",
+    "doi": "10.24432/C5K89B",
+    "source_page_sha256": "55125cc1330a4625035e94905316907dd06992b5b182212435dfe7d095c2febd",
+    "source_page_error": null,
+    "retrieved_utc": "2026-09-19T13:26:40.623171+00:00"
+  },
+  "wdbc": {
+    "name": "wdbc",
+    "uci_id": 17,
+    "source_url": "https://archive.ics.uci.edu/dataset/17/breast+cancer+wisconsin+diagnostic",
+    "archive_url": "https://archive.ics.uci.edu/static/public/17/breast+cancer+wisconsin+diagnostic.zip",
+    "archive_members": [
+      "wdbc.data",
+      "wdbc.names"
+    ],
+    "parsed_members": [
+      "wdbc.data"
+    ],
+    "archive_sha256": "bc154869ef13f753f9e2b5a17e248cfe1ba4b6721db7c4da9f4880e40b05d3af",
+    "processed_sha256": "29e50d14ec00044b199e0982b1473a3bfa784b2953c7f6e52d01f075464a98bf",
+    "array_sha256": "3019c221882c9c756a9b1c76da7ad72cf606ffe8e51791044aeaadeb33efbd12",
+    "n_samples": 569,
+    "n_features": 30,
+    "n_classes": 2,
+    "class_labels": [
+      "B",
+      "M"
+    ],
+    "class_counts": [
+      357,
+      212
+    ],
+    "missing_values": 0,
+    "missing_handling": "Missing source values remain NaN. Fit imputation on each training fold only.",
+    "dropped_source_columns_zero_based": [
+      0
+    ],
+    "target_source_column_zero_based": 1,
+    "feature_source_columns_zero_based": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31
+    ],
+    "notes": "Thirty continuous predictors; patient/sample ID removed.",
+    "categorical_or_indicator_features_zero_based": [],
+    "all_predictors_numerically_encoded": true,
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "license_evidence": "creativecommons.org/licenses/by/4.0",
+    "license_quote": "This dataset is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license.",
+    "doi": "10.24432/C5DW2B",
+    "source_page_sha256": "e74fabf5c1deff25a7f329420b697a418fab0d7d4c1d1665770668e801c46ac0",
+    "source_page_error": null,
+    "retrieved_utc": "2026-09-19T13:26:40.593084+00:00"
+  },
+  "wine": {
+    "name": "wine",
+    "uci_id": 109,
+    "source_url": "https://archive.ics.uci.edu/dataset/109/wine",
+    "archive_url": "https://archive.ics.uci.edu/static/public/109/wine.zip",
+    "archive_members": [
+      "Index",
+      "wine.data",
+      "wine.names"
+    ],
+    "parsed_members": [
+      "wine.data"
+    ],
+    "archive_sha256": "2bae62c4481220623579d4c4fb36b55652b6b75e06e49fa1981b8198362dfdab",
+    "processed_sha256": "7df93c6db655bbdc40c75f2094b2ddc4a45a4ac6a17f5854029cde2b42a63bca",
+    "array_sha256": "3a28849ef2366c4b9d4e382b3fa5624a66f693c04d7fdcf43c529bbb0bb338d7",
+    "n_samples": 178,
+    "n_features": 13,
+    "n_classes": 3,
+    "class_labels": [
+      "1",
+      "2",
+      "3"
+    ],
+    "class_counts": [
+      59,
+      71,
+      48
+    ],
+    "missing_values": 0,
+    "missing_handling": "Missing source values remain NaN. Fit imputation on each training fold only.",
+    "dropped_source_columns_zero_based": [],
+    "target_source_column_zero_based": 0,
+    "feature_source_columns_zero_based": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13
+    ],
+    "notes": "All thirteen predictors are numerical chemical measurements.",
+    "categorical_or_indicator_features_zero_based": [],
+    "all_predictors_numerically_encoded": true,
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "license_evidence": "creativecommons.org/licenses/by/4.0",
+    "license_quote": "This dataset is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license.",
+    "doi": "10.24432/C5PC7J",
+    "source_page_sha256": "fc8a27529655988b3ff4280ef5bf893ebbd472dd777c89e01de681865407f041",
+    "source_page_error": null,
+    "retrieved_utc": "2026-09-19T13:26:40.580340+00:00"
+  },
+  "yeast": {
+    "name": "yeast",
+    "uci_id": 110,
+    "source_url": "https://archive.ics.uci.edu/dataset/110/yeast",
+    "archive_url": "https://archive.ics.uci.edu/static/public/110/yeast.zip",
+    "archive_members": [
+      "yeast.data",
+      "yeast.names"
+    ],
+    "parsed_members": [
+      "yeast.data"
+    ],
+    "archive_sha256": "8fe9a4490edfa67532f1dee7ec11f1804437ad43f9f8b7536e32d5be8bce0bb5",
+    "processed_sha256": "7c85c0712abeb1609fb071d8a7f965d464cafceab68e1d45b29511dab2afeeed",
+    "array_sha256": "d31aea56e7fd3bc40e0208ddb00f6e470294865956b6127040f3b731d8b5f332",
+    "n_samples": 1484,
+    "n_features": 8,
+    "n_classes": 10,
+    "class_labels": [
+      "CYT",
+      "ERL",
+      "EXC",
+      "ME1",
+      "ME2",
+      "ME3",
+      "MIT",
+      "NUC",
+      "POX",
+      "VAC"
+    ],
+    "class_counts": [
+      463,
+      5,
+      35,
+      44,
+      51,
+      163,
+      244,
+      429,
+      20,
+      30
+    ],
+    "missing_values": 0,
+    "missing_handling": "Missing source values remain NaN. Fit imputation on each training fold only.",
+    "dropped_source_columns_zero_based": [
+      0
+    ],
+    "target_source_column_zero_based": 9,
+    "feature_source_columns_zero_based": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "notes": "Eight numerical localization predictors include discrete indicator-like scores; sequence identifier removed.",
+    "categorical_or_indicator_features_zero_based": [],
+    "all_predictors_numerically_encoded": true,
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "license_evidence": "creativecommons.org/licenses/by/4.0",
+    "license_quote": "This dataset is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license.",
+    "doi": "10.24432/C5KG68",
+    "source_page_sha256": "f6580b0e3d4b26b3fb01bf32ca833d45690a2929c648d81930c2c77ef8e2a89f",
+    "source_page_error": null,
+    "retrieved_utc": "2026-09-19T13:26:40.616656+00:00"
+  }
+}
